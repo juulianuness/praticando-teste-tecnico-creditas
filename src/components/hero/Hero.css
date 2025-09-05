@@ -1,0 +1,193 @@
+.title {
+    
+    flex-wrap: wrap;
+    text-align: center;
+    color: #5a5a5a;
+    padding: 2rem 18rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 15px;
+    
+}
+
+
+.simulador {
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 4rem;            
+  justify-content: center; 
+  align-items: flex-start; 
+  align-content: center;
+}
+
+.coluna {
+  flex: 1 1 300px;   
+  max-width: 300px; 
+
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo input[type="number"],
+.campo select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+}
+
+
+
+
+.resultado {
+  flex: 1 1 250px;        /* mínimo de 250px */
+  max-width: 320px;       /* largura máxima do card */
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;     /* centraliza o conteúdo do card */
+}
+
+.resultado h3 {
+  color: #888;
+  font-weight: normal;
+}
+
+.resultado .valor {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00b050;
+  margin: 1rem 0;
+}
+
+.resultado p {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  margin-top: 1rem;
+  background: #9eff2e;
+  color: #000000;
+  border: none;
+  padding: 0.8rem 3.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00c853;
+}
+
+.nota {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.range-container {
+  display: flex;
+  flex-direction: column; /* deixa o range e os labels empilhados */
+  width: 85%;
+  max-width: 350px;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between; /* espaça os labels ao longo da largura */
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+
+/* input range estilizado */
+input[type="range"] {
+  
+  appearance: none;
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #b9b6b3; /* cinza claro igual print */
+  outline: none;
+  margin: 0;
+}
+
+/* track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 4px;
+  background: #b9b6b3;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: #b9b6b3;
+}
+
+/* handle quadradinho */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 28px;
+  border-radius: 2px;
+  background: #b9b6b3;
+  cursor: pointer;
+  border: 1px solid #999;
+  margin-top: -11px; /* centraliza */
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1295px) {
+    .title {
+        padding: 2rem 10rem;
+    }
+}
+
+@media (max-width : 1115px) {
+    .title {
+        padding: 2rem 5rem;
+    }
+}
+
+@media (max-width : 955px) {
+    .title {
+        padding: 2rem 4.5rem;
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+    }
+    
+    
+}
+
+@media (max-width : 800px) {
+    .title {
+        padding: 2rem 1rem;
+        line-height: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    
+}
